@@ -9,7 +9,7 @@ var inp = document.getElementById("field");
 function  validate(event) {
     if (qCounter < q.length) {
         if (event.keyCode === 13) {
-            if (a[qCounter] === event.target.value) {
+            if (a[qCounter] === event.target.value.toLowerCase()) {
                 qCounter++;
                 showTick();
                 event.target.readOnly = true;
