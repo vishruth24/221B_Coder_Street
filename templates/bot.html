@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="static/main_bot.css">
+    <meta charset="UTF-8">
+    <title>221B Coder Street</title>
+</head>
+<body>
+    <header>
+        <p>221B Coder Street</p>
+    </header>
+    <div>
+      <center>
+        <p id="ques" style="font-size:2em;"></p>
+        <input onkeypress="validate(event)" type="text" name="X_" id="field" placeholder="Type your answer here" onfocus="this.placeholder=' '" onblur="this.placeholder = 'Type your answer here' ">
+      </center>
+    </div>
+    <div id="res"></div>
+    <script src="static/index_bot.js"></script>
+</body>
+</html>

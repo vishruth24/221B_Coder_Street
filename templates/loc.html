@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Location</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+
+      <link rel="stylesheet" href="static/style_login.css">
+
+
+</head>
+
+<body>
+<style media="screen">
+  body {background: url('/static/bg4.jpg')!important;}
+</style>
+
+  <div class="cont">
+
+  <div style="background:white;  padding:20px; margin:50px auto; font-size:2.5em; width:700px;">
+
+
+  <input type="text" id="location" placeholder="Enter the location">
+    <a href="#" class="btn btn-primary" id="check">Check</a>
+
+
+
+
+
+  </div>
+
+</div>
+  <script src='/static/jquery.min.js'></script>
+
+  <script type="text/javascript">
+    $('#check').click(function(){
+    if ($('#location').val()=='Princeton Street'){
+      alert('You will get information');
+      window.location.href = "/second";
+    }
+    });
+  </script>
+
+    <script  src="static/index_login.js"></script>
+
+
+
+
+</body>
+
+</html>
